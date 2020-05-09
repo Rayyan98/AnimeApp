@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7CC78F07-0DE8-48BA-AE72-882066E68456}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEpisodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEpisodes.Designer.cs">
+      <DependentUpon>AddEpisodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Character.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Character.Designer.cs">
+      <DependentUpon>Character.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anime.Designer.cs">
+      <DependentUpon>Anime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbConnection.cs" />
+    <Compile Include="Register Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register Form.Designer.cs">
+      <DependentUpon>Register Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff.Designer.cs">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manga.Designer.cs">
+      <DependentUpon>Manga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publishers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Publishers.Designer.cs">
+      <DependentUpon>Publishers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Studio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studio.Designer.cs">
+      <DependentUpon>Studio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserAnime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAnime.Designer.cs">
+      <DependentUpon>UserAnime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserManga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManga.Designer.cs">
+      <DependentUpon>UserManga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSearchStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSearchStaff.Designer.cs">
+      <DependentUpon>UserSearchStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSearchCharacters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSearchCharacters.Designer.cs">
+      <DependentUpon>UserSearchCharacters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersSearchStudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersSearchStudio.Designer.cs">
+      <DependentUpon>UsersSearchStudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersSearchPublishers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersSearchPublishers.Designer.cs">
+      <DependentUpon>UsersSearchPublishers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersSearchManga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersSearchManga.Designer.cs">
+      <DependentUpon>UsersSearchManga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSearchAnime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSearchAnime.Designer.cs">
+      <DependentUpon>UserSearchAnime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSearch.Designer.cs">
+      <DependentUpon>UserSearch.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddEpisodes.resx">
+      <DependentUpon>AddEpisodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Character.resx">
+      <DependentUpon>Character.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anime.resx">
+      <DependentUpon>Anime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register Form.resx">
+      <DependentUpon>Register Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff.resx">
+      <DependentUpon>Staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manga.resx">
+      <DependentUpon>Manga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Publishers.resx">
+      <DependentUpon>Publishers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Studio.resx">
+      <DependentUpon>Studio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserAnime.resx">
+      <DependentUpon>UserAnime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManga.resx">
+      <DependentUpon>UserManga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSearchStaff.resx">
+      <DependentUpon>UserSearchStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSearchCharacters.resx">
+      <DependentUpon>UserSearchCharacters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersSearchStudio.resx">
+      <DependentUpon>UsersSearchStudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersSearchPublishers.resx">
+      <DependentUpon>UsersSearchPublishers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersSearchManga.resx">
+      <DependentUpon>UsersSearchManga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSearchAnime.resx">
+      <DependentUpon>UserSearchAnime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSearch.resx">
+      <DependentUpon>UserSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yui.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animebuttonsssedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fivecmpersec.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editied anime22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editied anime221.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animefinal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mangaedit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualmangaedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miyazaki1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miyazaki11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miyazaki12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\studioedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\studioedit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\studioedit11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ededit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty-person-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crossedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crossedit1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
